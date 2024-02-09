@@ -1,0 +1,11 @@
+import os
+def media():
+    numero = float(input('quanto voce ganha por hora: '))
+    horas = float(input('Quantas horas voce trabalha no mês: '))
+    totalBruto = numero*horas
+    ir = totalBruto*11/100
+    INSS = totalBruto*8/100
+    sindicato = totalBruto*5/100
+    salarioLiquido = totalBruto-INSS-sindicato-ir
+    print(f"Salario Bruto: {totalBruto} $ \n - IRR: {ir} $ \n - INSS: {INSS} $ \n - SINDICATO: {sindicato} $ \n SALARIO LIQUIDO: {salarioLiquido} $")
+media()
