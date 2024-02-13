@@ -1,22 +1,25 @@
 player = {
     "VIDA":int(10),
-} # crio uma lista com o nome de player
-
+    "NOME":"",
+}
 def dano():
-    player["VIDA"] -= 1 # informo que quando chamar a função dano vai pegar o valor de VIDA e subtrair por 1
+    player["VIDA"] -= 1
     print(player["VIDA"])
-    # crio a função dano
-
 def curar():
-    player["VIDA"] += 1 # informo que quando chamar a função dano vai pegar o valor de VIDA e adiciono por 1
+    player["VIDA"] += 1
     print(player["VIDA"])
-    # crio a função curar
-
+    
 jogo = True
-while jogo == True: #crio um loop
-
-    a = input("O que deseja C/B")
+while jogo == True:
+    p = input('Digite seu nome jogador: ')
+    player["NOME"] = p
+    print(f"Bem vindo jogador {player} ")
+    print(f"Sua vida atual é de: {p} ")
+    a = input("O que deseja C/B: ")
+    
     if a == "c":
         curar()
     elif a == "b":
         dano()
+    if player["VIDA"] == 0:
+        print("Morreu")
