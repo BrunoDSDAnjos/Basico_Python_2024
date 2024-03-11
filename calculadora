@@ -1,0 +1,90 @@
+def somar():
+    #recebe um numero, somo outro, pego o resultado e somo, ate eu querer encerrar
+    numero1 = int(input('Digite um numero: '))#solicitando ao usuario um numero
+    numero2 = int(input('Digite outro numero: '))#solicitando ao usuario outro numero
+    resultado = numero1+numero2 #primeiro resultado do usuario
+    print(f'Resultado {resultado}')#exibindo o resultado
+    opcao2 = input("Continuar c / sair s ")#opção de continuar ou parar
+    if opcao2 == 'c':
+        while True == True:#loop para que as somas seja calculadas aparti de valores passado
+            continuar = int(input("Outro numero: "))#solicitando o proximo numero para o calculo
+            sequencia = resultado + continuar #sequencia vai pegar o resultado as somas passadas + o novo valor
+            resultado = sequencia #atribuindo o novo valor de resultado
+            print(resultado)
+            opcao2 = input("Continuar c / sair s ")
+            if opcao2 == 's':
+                break
+def subtrair():
+    #recebe um numero, somo outro, pego o resultado e somo, ate eu querer encerrar
+    numero1 = int(input('Digite um numero: '))#solicitando ao usuario um numero
+    numero2 = int(input('Digite outro numero: '))#solicitando ao usuario outro numero
+    resultado = numero1-numero2 #primeiro resultado do usuario
+    print(f'Resultado {resultado}')#exibindo o resultado
+    opcao2 = input("Continuar c / sair s ")#opção de continuar ou parar
+    if opcao2 == 'c':
+        while True == True:#loop para que as somas seja calculadas aparti de valores passado
+            continuar = int(input("Outro numero: "))#solicitando o proximo numero para o calculo
+            sequencia = resultado - continuar #sequencia vai pegar o resultado as somas passadas - o novo valor
+            resultado = sequencia #atribuindo o novo valor de resultado
+            print(resultado)
+            opcao2 = input("Continuar c / sair s ")
+            if opcao2 == 's':
+                break
+def dividir():
+    #recebe um numero, somo outro, pego o resultado e somo, ate eu querer encerrar
+    numero1 = int(input('Digite um numero: '))#solicitando ao usuario um numero
+    numero2 = int(input('Digite outro numero: '))#solicitando ao usuario outro numero
+    resultado = numero1/numero2 #primeiro resultado do usuario
+    print(f'Resultado {resultado}')#exibindo o resultado
+    opcao2 = input("Continuar c / sair s ")#opção de continuar ou parar
+    if opcao2 == 'c':
+        while True == True:#loop para que as somas seja calculadas aparti de valores passado
+            continuar = int(input("Outro numero: "))#solicitando o proximo numero para o calculo
+            sequencia = resultado / continuar #sequencia vai pegar o resultado as somas passadas - o novo valor
+            resultado = sequencia #atribuindo o novo valor de resultado
+            print(resultado)
+            opcao2 = input("Continuar c / sair s ")
+            if opcao2 == 's':
+                break
+def multiplicar():
+    #recebe um numero, somo outro, pego o resultado e somo, ate eu querer encerrar
+    numero1 = int(input('Digite um numero: '))#solicitando ao usuario um numero
+    numero2 = int(input('Digite outro numero: '))#solicitando ao usuario outro numero
+    resultado = numero1*numero2 #primeiro resultado do usuario
+    print(f'Resultado {resultado}')#exibindo o resultado
+    opcao2 = input("Continuar c / sair s ")#opção de continuar ou parar
+    if opcao2 == 'c':
+        while True == True:#loop para que as somas seja calculadas aparti de valores passado
+            continuar = int(input("Outro numero: "))#solicitando o proximo numero para o calculo
+            sequencia = resultado * continuar #sequencia vai pegar o resultado as somas passadas - o novo valor
+            resultado = sequencia #atribuindo o novo valor de resultado
+            print(resultado)
+            opcao2 = input("Continuar c / sair s ")
+            if opcao2 == 's':
+                break            
+print(27*"_")
+print('Bem vindo a calculadora')
+teste = True
+while teste == True:
+    opcoes = int(input('''
+[1]somar       
+[2]subtrair 
+[3]dividir
+[4]multiplicar                                             
+'''))
+    if opcoes == 1:
+        while True == True:
+            somar()
+            break
+    if opcoes == 2:
+        while True == True:
+            subtrair()
+            break
+    if opcoes == 3:
+        while True == True:
+            dividir()
+            break
+    if opcoes == 4:
+        while True == True:
+            multiplicar()
+            break
